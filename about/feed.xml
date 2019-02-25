@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>gzfarmer&#39;s blog</title>
-    <link>http://gzfarmer.github.io/feed.xml</link>
-    <description>Recent content on gzfarmer&#39;s blog</description>
+    <title>Abouts on gzfarmer&#39;s blog</title>
+    <link>http://gzfarmer.github.io/about/</link>
+    <description>Recent content in Abouts on gzfarmer&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 25 Feb 2019 14:05:10 +0800</lastBuildDate>
     
-	<atom:link href="http://gzfarmer.github.io/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://gzfarmer.github.io/about/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>http://gzfarmer.github.io/about/about/</guid>
       <description>这是gzfarmer的博客。</description>
-    </item>
-    
-    <item>
-      <title>My First Blog</title>
-      <link>http://gzfarmer.github.io/post/my-first-blog/</link>
-      <pubDate>Mon, 25 Feb 2019 13:19:30 +0800</pubDate>
-      
-      <guid>http://gzfarmer.github.io/post/my-first-blog/</guid>
-      <description>这是第一个微博。</description>
     </item>
     
   </channel>
