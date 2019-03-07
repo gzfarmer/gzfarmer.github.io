@@ -2,13 +2,13 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>命令备忘 - 佰草集</title>
+  <title> - 佰草集</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
   
-  <meta name="description" content="查看文件属性 lsattr /srv/docker chattr -i /srv/docker rm -rf /srv/docker rsync实例 rsync -avz /root/temp/ lx@192.168.1.103:/home/lx/tmp/ rsync -avz -e ssh /root/temp/ lx@192.168.1.103:/home/lx/tmp/ 说明： -a 保留原文件时间戳、属主/属组、权限属性 -v 显示命令执行详细信息 -z 传输前进">
+  <meta name="description" content="查看文件属性 lsattr /srv/docker chattr -i /srv/docker rm -rf /srv/docker rsync实例 rsync -avz /root/temp/ lx@192.168.1.10:/home/lx/tmp/ rsync -avz -e ssh /root/temp/ lx@192.168.1.10:/home/lx/tmp/ 说明： -a 保留原文件时间戳、属主/属组、权限属性 -v 显示命令执行详细信息 -z 传输前进">
   
-  <meta itemprop="name" content="命令备忘 - 佰草集">
-  <meta itemprop="description" content="查看文件属性 lsattr /srv/docker chattr -i /srv/docker rm -rf /srv/docker rsync实例 rsync -avz /root/temp/ lx@192.168.1.103:/home/lx/tmp/ rsync -avz -e ssh /root/temp/ lx@192.168.1.103:/home/lx/tmp/ 说明： -a 保留原文件时间戳、属主/属组、权限属性 -v 显示命令执行详细信息 -z 传输前进">
+  <meta itemprop="name" content=" - 佰草集">
+  <meta itemprop="description" content="查看文件属性 lsattr /srv/docker chattr -i /srv/docker rm -rf /srv/docker rsync实例 rsync -avz /root/temp/ lx@192.168.1.10:/home/lx/tmp/ rsync -avz -e ssh /root/temp/ lx@192.168.1.10:/home/lx/tmp/ 说明： -a 保留原文件时间戳、属主/属组、权限属性 -v 显示命令执行详细信息 -z 传输前进">
   <meta itemprop="image" content="https://gzfarmer.github.io/img/author.jpg">
   
   
@@ -61,7 +61,7 @@
 	<article itemprop="articleBody">
     <header class="article-info clearfix">
   <h1 itemprop="name">
-      <a href="https://gzfarmer.github.io/post/cli/" title="命令备忘" itemprop="url">命令备忘</a>
+      <a href="https://gzfarmer.github.io/post/cli/" title="" itemprop="url"></a>
   </h1>
   <p class="article-author">By
     
@@ -86,8 +86,8 @@ rm -rf /srv/docker
 
 <h1 id="rsync实例">rsync实例</h1>
 
-<pre><code>rsync -avz /root/temp/ lx@192.168.1.103:/home/lx/tmp/
-rsync -avz -e ssh /root/temp/ lx@192.168.1.103:/home/lx/tmp/
+<pre><code>rsync -avz /root/temp/ lx@192.168.1.10:/home/lx/tmp/
+rsync -avz -e ssh /root/temp/ lx@192.168.1.10:/home/lx/tmp/
 说明：
 -a 保留原文件时间戳、属主/属组、权限属性
 -v 显示命令执行详细信息
@@ -127,77 +127,6 @@ firewall-cmd --zone=public --add-port=80/tcp --permanent
 systemctl restart firewalld.service
 </code></pre>
 
-<h1 id="安装centos7之后的配置">安装centos7之后的配置：</h1>
-
-<pre><code>cat /etc/redhat-release
-yum  install epel-release
-yum -y update &amp;&amp; yum -y upgrade
-yum install -y tmux
-yum install -y docker
-yum install -y python-pip
-pip install --upgrade pip
-pip install docker-compose
-
-systemctl start docker.service
-systemctl enable docker.service
-0 23 * * 6     sudo yum -y update &amp;&amp; sudo yum -y upgrade
-
-pwgen -Bsv1 64
-</code></pre>
-
-<h1 id="安装ubuntu16-04之后的配置">安装ubuntu16.04之后的配置</h1>
-
-<pre><code>sudo apt update
-sudo apt install tmux
-sudo apt install docker.io
-sudo apt install python-pip
-pip install docker-compose
-sudo apt install git
-</code></pre>
-
-<h1 id="安装sublime-text-3">安装sublime text 3</h1>
-
-<pre><code>https://www.linuxidc.com/Linux/2017-08/146061.htm
-</code></pre>
-
-<h1 id="安装pycharm">安装pycharm</h1>
-
-<pre><code>http://blog.csdn.net/zhuanshu666/article/details/73554885
-sudo snap install pycharm-professional --classic
-
-sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
-#sh -c &quot;$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&quot;
-sudo apt-get install shutter
-</code></pre>
-
-<h1 id="安装微信">安装微信</h1>
-
-<pre><code>https://www.cnblogs.com/EasonJim/p/7114667.html
-</code></pre>
-
-<h1 id="安装shadowsocks">安装shadowsocks</h1>
-
-<pre><code>https://github.com/shadowsocks/shadowsocks-qt5/wiki/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97
-</code></pre>
-
-<h1 id="安装xmind8">安装xmind8</h1>
-
-<pre><code>http://blog.csdn.net/qq_35976351/article/details/79329958
-</code></pre>
-
-<h1 id="shadowsocks-install">shadowsocks install</h1>
-
-<pre><code>wget --no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh
-chmod +x shadowsocks.sh
-./shadowsocks.sh 2&gt;&amp;1 | tee shadowsocks.log
-</code></pre>
-
-<h1 id="shadowsocks-client-install">shadowsocks client install</h1>
-
-<pre><code>sudo pip install shadowsocks
-sudo /usr/local/bin/sslocal -c /etc/shadowsocks/config.json -d start
-</code></pre>
-
 <h1 id="docker删除重复id">docker删除重复id</h1>
 
 <pre><code>docker rmi -f $(docker images -q sameersbn/gitlab | sort -u)
@@ -223,103 +152,6 @@ dpkg: 依赖关系问题使得 ttf-mscorefonts-installer 的配置工作不能�
 <pre><code>sudo curl -L https://github.com/docker/compose/releases/download/1.17.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
-
-pip install --upgrade pip
-pip install lxml
-pip install tushare
-pip install psycopg2-binary
-</code></pre>
-
-<h1 id="创建新用户来访问postgresql">创建新用户来访问PostgreSQL</h1>
-
-<pre><code>1、先切换到Linux用户postgres，并执行psql：
-
-$ su - postgres
--bash-4.2$ psql
-postgres=#
-
-2、在postgres提示符下，创建数据库新用户，如 dbuser：
-
-postgres=# CREATE USER dbuser WITH PASSWORD '*****';
-
-注意：
-  语句要以分号结尾。
-  密码要用单引号括起来。
-3、创建用户数据库，如exampledb：
-
-postgres=# CREATE DATABASE exampledb OWNER dbuser;
-
-4、将exampledb数据库的所有权限都赋予dbuser：
-
-postgres=# GRANT ALL PRIVILEGES ON DATABASE exampledb TO dbuser;
-
-5、使用命令 \q 退出psql：
-
-postgres=# \q
-
-6、创建Linux普通用户，与刚才新建的数据库用户同名，如 dbuser：
-
-$ sudo adduser dbuser
-$ sudo passwd dbuser
-
-7、以dbuser的身份连接数据库exampledb：
-
-$ su - dbuser
-
-Password: 
-Last login: Wed Mar 1 11:52:07 CST 2017 on pts/
-
-[dbuser@master ~]$ psql -d exampledb
-</code></pre>
-
-<h1 id="matplotlib-seaborn-中文显示">matplotlib seaborn 中文显示</h1>
-
-<pre><code>1. 拷贝simhei.ttf到如下目录：
-
-/opt/conda/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/
-
-2. 修改matplotlibrc：
-
-vim /opt/conda/lib/python3.6/site-packages/matplotlib/mpl-data/matplotlibrc
-
-3. 重建缓存:
-
-from matplotlib.font_manager import _rebuild
-_rebuild()
-
-4. 程序中设置：
-
-import matplotlib.pyplot as plt
-import seaborn as sns
-plt.rcParams['font.sans-serif'] = ['SimHei']
-plt.rcParams['axes.unicode_minus'] = False
-sns.set(font='SimHei')
-</code></pre>
-
-<h1 id="centos7-配置docker的tcp端口">Centos7 配置docker的tcp端口</h1>
-
-<pre><code>vim /usr/lib/systemd/system/docker.service
-ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2375 -H unix://var/run/docker.sock
-systemctl daemon-reload
-systemctl restart docker
-ps -ef|grep docker
-netstat -tulp
-lsof -i:2375
-</code></pre>
-
-<h1 id="开放2375端口">开放2375端口</h1>
-
-<pre><code>firewall-cmd --permanent --add-port=2375/tcp
-</code></pre>
-
-<h1 id="移除端口">移除端口</h1>
-
-<pre><code>firewall-cmd --permanent --remove-port=2375/tcp
-</code></pre>
-
-<h1 id="重启防火墙">重启防火墙</h1>
-
-<pre><code>firewall-cmd --reload
 </code></pre>
 
 <h1 id="pycharm-helpers问题">pycharm_helpers问题</h1>
@@ -330,7 +162,7 @@ my docker version
 https://blog.csdn.net/kongxx/article/details/78361048
 </code></pre>
 
-<h1 id="fix-docker-unknown-runtime-specified-oci-error">Fix docker <code>Unknown runtime specified oci</code> error</h1>
+<h1 id="fix-docker-unknown-runtime-specified-oci-error">Fix docker Unknown runtime specified oci error</h1>
 
 <pre><code>1/Find the ID of the troublesome container: docker ps -a
 2/Find its directory in /var/lib/docker/containers/&lt;ID&gt;/
@@ -346,64 +178,6 @@ run --&gt; edit configurations --&gt; docker container settings --&gt; host path
 在development设置时指定。
 </code></pre>
 
-<h1 id="youtube-dl基本用法">youtube-dl基本用法</h1>
-
-<pre><code>youtube-dl.exe --proxy &quot;http://127.0.0.1:1080&quot; --list-formats &quot;https://youtu.be/ZrEsLwCjdxY?t=127&quot;
-youtube-dl.exe --proxy &quot;http://127.0.0.1:1080&quot; -o &quot;D:\Downloads\Video\%(title)s.%(ext)s&quot; -f &quot;136+140&quot; &quot;https://youtu.be/ZrEsLwCjdxY?t=127&quot;
-youtube-dl.exe --proxy &quot;http://127.0.0.1:1080&quot; -o &quot;D:\Downloads\Video\%(title)s.%(ext)s&quot; -f &quot;22&quot; &quot;https://youtu.be/9cKsq14Kfsw?t=655&quot;
-
-ffmpeg -i D:\Downloads\Video\一天搞懂深度學習--學習心得.f136.mp4 -i D:\Downloads\Video\一天搞懂深度學習--學習心得.f140.m4a -c copy D:\Downloads\Video\一天搞懂深度學習--學習心得.mp4
-
-# Download best mp4 format available or any other best if no mp4 available
-youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'
-
-# =============== 树莓派上的用法 =====================
-youtube-dl --proxy &quot;http://192.168.0.20:8118&quot; --list-formats &quot;https://youtu.be/itvFwhzdvls?t=17&quot;
-youtube-dl --proxy &quot;http://192.168.0.20:8118&quot; -o &quot;/mnt/WDMyCloud/aria2_data/%(title)s.%(ext)s&quot; -f &quot;136+140&quot; &quot;https://youtu.be/itvFwhzdvls?t=17&quot;
-</code></pre>
-
-<h1 id="centos7修改docker默认镜像和容器的存储位置">CentOS7修改Docker默认镜像和容器的存储位置</h1>
-
-<pre><code>systemctl stop docker
-vi /usr/lib/systemd/system/docker.service
-ExecStart=/usr/bin/dockerd --graph &quot;/home/docker&quot; -H tcp://0.0.0.0:2375 -H unix://var/run/docker.sock
-systemctl daemon-reload
-systemctl start docker
-
-# docker login 500 error
-docker exec 9a2593a6e958 rm -f /root/.jupyter/jupyter_notebook_config.py
-</code></pre>
-
-<h1 id="centos7配置环境变量">centos7配置环境变量</h1>
-
-<pre><code>vim /etc/profile
-PATH=$PATH:/root/.local/bin
-export PATH
-source /etc/profile
-</code></pre>
-
-<h1 id="mongodb创建用户">mongodb创建用户</h1>
-
-<pre><code>db.createUser({user:&quot;xxxxx&quot;,pwd:&quot;password&quot;,roles:[&quot;readWrite&quot;],mechanisms : [&quot;SCRAM-SHA-1&quot;]})
-</code></pre>
-
-<h1 id="debian安装nodejs">debian安装nodejs</h1>
-
-<pre><code>curl -sL https://deb.nodesource.com/setup_11.x | bash -
-apt-get install -y nodejs
-</code></pre>
-
-<h1 id="linux-分割大文件">linux 分割大文件</h1>
-
-<pre><code>split -l 4000 ./raw_data/urls.txt -d -a 4 urls 
-cat urls.txt | sed -n '1,2000p' &gt; 1-2000.txt
-
-wget -e &quot;http_proxy=http://127.0.0.1:8118&quot; \
-     -nc --timeout=5 --tries=2 \
-     -i &quot;1-2000.txt&quot; \
-     -P &quot;/images&quot;
-</code></pre>
-
 <h1 id="vim-复制粘贴">vim 复制粘贴</h1>
 
 <pre><code>ctrl-insert/shift-insert
@@ -417,7 +191,7 @@ wget -e &quot;http_proxy=http://127.0.0.1:8118&quot; \
 
 
   <div class="article-share" id="share">
-    <div data-url="https://gzfarmer.github.io/post/cli/" data-title="命令备忘" data-tsina="gzhunhun_x" class="share clearfix">
+    <div data-url="https://gzfarmer.github.io/post/cli/" data-title="" data-tsina="gzhunhun_x" class="share clearfix">
     </div>
   </div>
 </footer>
